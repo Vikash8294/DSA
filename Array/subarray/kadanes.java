@@ -18,7 +18,8 @@ public class kadanes {
     }
     public static void main(String[] args) {
         // int num[] = {-2,-3,4,-1,-2,1,5,-3};
-        int num[] = {-2,-3,-4,-1,-5};
+         int num[] = {1,-2,6,-1,3};
+        // int num[] = {-2,-3,-4,-1,-5};
         kadane(num);
     }
     
