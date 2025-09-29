@@ -69,8 +69,8 @@ public class comp {
     return m.toString().toCharArray();   
     }
     public static void main(String[] args) {
-        // String s = "aaabbcccdd";
-        String s = "abc";
+        String s = "aaabbcccdd";
+        // String s = "abc";
         String a = sc(s);
         System.out.println(a);
         String b = sc2(s);
