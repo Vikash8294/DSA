@@ -19,7 +19,7 @@ public class lowerbound {
     }
     public static void main(String[] args) {
         int num[] = {3,5,8,15,19}; 
-        int key = 4;
+        int key = 20;
         System.out.println("the tarGet of lowerbound  is as index : "+ getLowerBond(num, key));
     }
     
