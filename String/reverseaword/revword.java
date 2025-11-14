@@ -55,9 +55,9 @@ public class revword {
         String s  = "the sky is blue";
         String a = rw(s);
         System.out.println(a);
-        String ans = rev(s);
-        System.out.println(ans);
-        rev2(s);
+        // String ans = rev(s);
+        // System.out.println(ans);
+        // rev2(s);
 
 
         

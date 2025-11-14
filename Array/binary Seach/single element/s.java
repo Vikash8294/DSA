@@ -44,12 +44,21 @@ public class s {
 
         
     }
+
+    public static void single2(int num[]) {
+        int s = 0;
+        for(int i =0; i<num.length; i++){
+            s= s^num[i];
+        }
+        System.out.println("singhle " + s);
+        
+    }
     public static void main(String[] args) {
         // int num[] ={1,1,2,3,3,4,4,8,8};
         int num[] ={1,1,3,3,7,10,10,11,11};
         int ans =singlelement(num);
         System.out.println(ans);
-        
+        single2(num);
 
         
     }

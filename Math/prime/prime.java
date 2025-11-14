@@ -63,8 +63,8 @@ public class prime {
         int n = 10;
         int c = 3246;
         System.out.println((int)(Math.log10 (c) +1) );
-        p(n);
-        // normalprime(n);
+        // p(n);
+        normalprime(n);
     }
     
 }

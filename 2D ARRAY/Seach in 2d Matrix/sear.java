@@ -1,10 +1,10 @@
 
 
 public class sear {
-    public static void Search(int matrix [][], int n , int m ,int key) {
+    public static boolean Search(int matrix [][], int n , int m ,int key) {
         int s = 0;
         int e = m-1;
-        int ans = -1;
+        // int ans = -1;
         while(s<=e){//O(log m)
             int mid = s+(e-s)/2;
             if(matrix[mid][0] <= key && key  <= matrix[mid][n-1]){
@@ -13,8 +13,8 @@ public class sear {
                 while(st<=en){ //O(lon(n))
                     int md = st + (en-st)/2 ;
                     if(matrix[mid][md] == key){
-                        System.out.println("FOUND AT ROW  "+mid+"  FOUND AT COL: "+ md);
-                        return;
+                        // System.out.println("FOUND AT ROW  "+mid+"  FOUND AT COL: "+ md);
+                        return true;
                     }
                     else if(matrix[mid][md] < key){
                         st = md +1;
@@ -23,8 +23,10 @@ public class sear {
                     else{
                         en = md -1;
                     }
-                }
-                break;
+                
+            }
+            return false;
+                
 
 
             }
@@ -37,15 +39,17 @@ public class sear {
 
             }
         }
-        System.out.println(ans  );
+        // System.out.println(ans  );
+        return false;
         
     }
     public static void main(String[] args) {
         int matrix[][]= {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
         int m = matrix.length;
         int n = matrix[0].length; 
-        int key = 20;
-        Search(matrix, n, m, key);
+        int key = 10;
+        boolean s =  Search(matrix, n, m, key);
+        System.out.println(s);
     }
 }
 // time complexcity is O(log(m) + log(n)) => O (log (n*m))
